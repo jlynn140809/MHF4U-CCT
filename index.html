@@ -1,309 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Time in Sunway ྀི</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --soft-pink: #fdf2f2;
-            --ribbon-pink: #f8c8dc;
-            --dusty-rose: #d4a5a9;
-            --card-white: #fffbfc;
-            --text-brown: #5d4945;
-        }
+<div class="graph-grid-container">
 
-        body {
-            background-color: var(--soft-pink);
-            color: var(--text-brown);
-            font-family: 'Playfair Display', serif;
-            margin: 0;
-            padding: 40px 20px;
-            /* Lace/polka dot background pattern */
-            background-image: radial-gradient(var(--ribbon-pink) 0.8px, transparent 0.8px);
-            background-size: 24px 24px;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/jkdmecndqu?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 1</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/vmh9cqimjx?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 2</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        h1 {
-            font-family: 'Pinyon Script', cursive;
-            font-size: 5rem;
-            color: var(--dusty-rose);
-            margin: 0;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/bsr2uunboi?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 3</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        .subtitle {
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.9rem;
-            margin-top: -5px;
-            opacity: 0.8;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/96isit76sf?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 4</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        /* STRICT 3x3 GRID LAYOUT */
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/keaunadtte?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 5</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        .grid-item {
-            background: var(--card-white);
-            border: 1px solid var(--dusty-rose);
-            padding: 20px;
-            border-radius: 4px;
-            box-shadow: 0 10px 25px rgba(212, 165, 169, 0.15);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s ease;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/tn4ae0kvln?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 6</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        .grid-item:hover {
-            transform: translateY(-5px);
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/bzrbec2fi8?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 7</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        /* Coquette Ribbon Top Accent */
-        .grid-item::before {
-            content: '🎀';
-            position: absolute;
-            top: -22px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.8rem;
-            z-index: 10;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/m8lqfvogu0?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 8</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        .heading-space {
-            font-family: 'Pinyon Script', cursive;
-            font-size: 2.2rem;
-            color: var(--dusty-rose);
-            text-align: center;
-            margin-bottom: 10px;
-        }
+  <div class="graph-card">
+    <div class="bow-decoration">🎀</div>
+    <div class="graph-area">
+      <iframe src="https://www.desmos.com/calculator/f5wva4yi7t?embed" width="100%" height="100%" style="border: 1px solid #ccc" frameborder=0></iframe>
+    </div>
+    <h2 class="heading">Heading 9</h2>
+    <p class="subtitle">Function Subtitle</p>
+  </div>
 
-        .sub-heading-space {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            text-align: center;
-            margin-top: -10px;
-            margin-bottom: 15px;
-            color: #8c7b75;
-        }
-
-        .desmos-container {
-            width: 100%;
-            aspect-ratio: 1 / 1; /* Keeps embed space beautifully square */
-            background-color: #fcfcfc;
-            border: 1px solid #f0efef;
-            margin-bottom: 15px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Paragraph Analysis Styling */
-        .analysis-section {
-            margin-top: 10px;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            text-align: left;
-            border-top: 1px dashed var(--dusty-rose);
-            padding-top: 15px;
-        }
-
-        .analysis-title {
-            font-weight: bold;
-            color: var(--dusty-rose);
-            margin-bottom: 4px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .analysis-paragraph {
-            margin: 0 0 15px 0;
-            color: #6e5a56;
-        }
-
-        .analysis-paragraph:last-child {
-            margin-bottom: 0;
-        }
-
-        /* Responsive styling for tablet/mobile views */
-        @media (max-width: 1024px) {
-            .photo-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 700px) {
-            .photo-grid { grid-template-columns: 1fr; }
-            h1 { font-size: 3.5rem; }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>My Time in Sunway</h1>
-        <p class="subtitle">Advanced Functions Final Project</p>
-    </header>
-
-    <main class="photo-grid">
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 1</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/jkdmecndqu?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation (e.g., {x ∈ ℝ | ...}). Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 2</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/vmh9cqimjx?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 3</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/bsr2uunboi?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 4</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/96isit76sf?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 5</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/keaunadtte?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 6</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/tn4ae0kvln?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 7</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/bzrbec2fi8?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 8</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/m8lqfvogu0?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-        <article class="grid-item">
-            <div class="heading-space">Function Title 9</div>
-            <div class="sub-heading-space">X-Axis Unit vs Y-Axis Unit</div>
-            <div class="desmos-container">
-                <iframe src="https://www.desmos.com/calculator/f5wva4yi7t?embed"></iframe>
-            </div>
-            <div class="analysis-section">
-                <div class="analysis-title">Transformations</div>
-                <p class="analysis-paragraph">Type your paragraph here explaining the horizontal/vertical transformations applied to your parent function and why they align with your photo context...</p>
-                
-                <div class="analysis-title">Domain & Range</div>
-                <p class="analysis-paragraph">State your domain and range here using proper notation. Explain why you restricted these boundaries based on real-world constraints.</p>
-            </div>
-        </article>
-
-    </main>
-
-    <footer style="margin-top: 60px; text-align: center; font-family: 'Pinyon Script', cursive; font-size: 2.2rem; color: var(--dusty-rose); opacity: 0.7;">
-        &hearts; Made with love for MHF4U &hearts;
-    </footer>
-
-</body>
-</html>
+</div>
