@@ -12,7 +12,7 @@
       padding: 0;
     }
     body {
-      background-color: #FFF2F2; /* Soft pale pink matching your theme */
+      background-color: #FFF2F2; /* Soft pale pink theme */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #4A3E3E;
       padding: 40px 20px;
@@ -63,11 +63,15 @@
       user-select: none;
     }
     .heading {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-family: 'Georgia', serif;
       color: #A36B7E;
       text-align: center;
       margin-bottom: 15px;
+      min-height: 50px; /* Aligns grids neatly even with varying heading lengths */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     /* Interactive Graph Frame Container */
@@ -111,7 +115,7 @@
     .component-section h3 {
       font-size: 1rem;
       color: #7D6B6B;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
       border-bottom: 1px solid #F7E1E1;
       padding-bottom: 2px;
     }
@@ -121,7 +125,7 @@
       text-align: justify;
     }
 
-    /* Responsive adjustments for smaller laptop layouts / mobile views */
+    /* Responsive adjustments */
     @media (max-width: 1100px) {
       .graph-grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -148,171 +152,135 @@
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Function of Choice: Semicircle</h2>
+      <h2 class="heading">function of choice: semicircle</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/jkdmecndqu?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/jkdmecndqu" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>For this photo, I started with the parent absolute value function ( y = |x| ). I then reflected the graph over the x-axis so it became an upside-down “V” shape using a negative sign. After that, I applied a vertical stretch to make the graph steeper so it would better match the shape in my photo. I also translated the graph 4 units to the right and 5 units upward so the vertex would line up with the highest point of the structure. These transformations made sense for my photo because they allowed me to accurately model the shape and position of the object using mathematics. The final graph matched the overall appearance and proportions of the structure in the image.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>The domain of my function is ( (-∞, ∞) ), which means the graph extends infinitely to the left and right along the x-axis. In real life, this represents how the mathematical pattern could continue beyond the visible part of the photo. The range of my function is ( (-∞, 5] ) because the highest point of the graph is at ( y = 5 ), which is the vertex. This makes sense in the context of my photo because the vertex represents the highest point of the structure, while the sides slope downward from there.</p>
+          <h3>Written Components</h3>
+          <p>To model the curved bottom edge of the large ceiling light fixture from my photo, I used a semi-elliptical function derived from the standard equation of an ellipse. By rearranging my Desmos equation, ((x + 0.06)^2)/8.5 + ((y - 0.1)^2)/4 = 0.37, and solving for y under the constraint {y &lt; 0}, I created a downward-opening semi-ellipse model. To align this mathematical curve perfectly with the hanging light fixture, I applied several key transformations. First, the denominators 8.5 and 4 represent horizontal and vertical stretching factors that define the major and minor axes, scaling the ellipse so that its curvature perfectly matches the wide, shallow proportions of the cylindrical lampshade. Second, I applied a slight horizontal shift to the left by 0.06 units and a vertical shift upward by 0.1 units. These translations shift the center of the ellipse to (-0.06, 0.1), which perfectly compensates for the camera angle and centers the apex of the curve right along the middle axis of the light fixture. When looking at the constraints of my model, the domain is restricted by the algebraic boundaries of the ellipse equation combined with the lower-half restriction. In the context of my project, this domain represents the continuous horizontal distance from the center of the light, measured in meters. It indicates that my mathematical curve tracks the bottom profile of the lampshade across a horizontal width spanning from approximately -1.71 meters to 1.59 meters, perfectly capturing the diameter of the large light fixture hanging directly above. The corresponding range for this semi-elliptical model under the restriction {y &lt; 0} is approximately {y ∈ ℝ | -1.12 &lt;= y &lt; 0}. In the real world, the range represents the vertical height of the ceiling light fixture's curved edge in meters relative to my reference baseline. The lower bound of -1.12 meters represents the lowest hanging point of the curved bottom rim, while the upper bound cuts off just below 0 meters where the curve meets the boundary limits of my tracking span.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Quadratic Reciprocal 1/x²</h2>
+      <h2 class="heading">quadratic reciprocal 1/x^2</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/vmh9cqimjx?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/vmh9cqimjx" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>For this photo, I used the parent reciprocal quadratic function ( y = 1/x² ). I applied horizontal translations to shift the graph slightly left and right so that each curve aligned with the curved edges of the wall structure in my photo. I also applied vertical compressions by dividing the function by 3.1 and 3.6, which made the curves wider and less steep so they would better match the actual shape of the object. In addition, I restricted the domains using ( x < 0 ) and ( x > 0 ) so that each side of the graph only appeared where I needed it. These transformations made sense in my photo because the reciprocal quadratic curves closely matched the rounded sides of the wall structure and helped create a more realistic mathematical model of the object.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>The domain of my function is ( (-∞, 0) ∪ (0, ∞) ) because the graph is undefined at ( x = 0 ). In the context of my photo, this means there is a gap in the middle where the wall structure does not continue through the center point. The range of my function is ( (0, ∞) ) because the graph only has positive y-values and never touches or goes below the x-axis. This connects to my real-life image because the height of the wall structure cannot be negative, so the graph represents only positive heights above the ground.</p>
+          <h3>Written Components</h3>
+          <p>To model the symmetrical, volcano-like curve from my photo, I used a quadratic reciprocal function based on the parent function y = 1/x^2. For this model, my equation is y = 0.5 / (x - 1)^2 + 1. To align the mathematical graph with the physical object in my image, I applied a few key transformations. First, I incorporated a vertical compression by a factor of 0.5, which widens the steep opening of the curves so that it perfectly traces the gradual flare of the structure rather than shooting up too sharply. Next, I applied a horizontal shift to the right by 1 unit, which moves the vertical asymptote to x = 1. This shift is crucial because it centers the infinite upward peak of the reciprocal graph directly over the central axis of symmetry of the object in my photo. Finally, I added a vertical shift upward by 1 unit, raising the horizontal asymptote to y = 1 so that the outer tails of the graph flatten out precisely where the base of the structure rests. When looking at the constraints of my model, the domain is defined as {0 &lt;= x &lt;= 3, x != 1}. In the context of my project, this domain represents the continuous horizontal distance of the structure in meters, measured relative to my reference baseline. It shows that my tracking covers a total span of 3 meters, capturing both symmetrical sides of the object while naturally excluding x = 1, where the physical center sits and the function is undefined due to the vertical asymptote. The corresponding range for this quadratic reciprocal model over the given domain is {y ∈ ℝ | 1.125 &lt;= y &lt; infinity} (or up to the maximum physical height tracked, such as y &lt;= 6). In the real world, the range represents the vertical height of the structure in meters relative to my baseline. The lower bound of 1.125 meters represents the lowest point of the structure's flared base at the outer edges of my tracking span, while the range extends upward toward infinity to represent how the physical columns or walls shoot straight up alongside the central vertical asymptote.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Exponential 2^x</h2>
+      <h2 class="heading">exponential 2^x</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/bsr2uunboi?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/bsr2uunboi" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>For this photo, I used exponential functions to model the curved wooden structure shown in the image. I started with the parent exponential function ( y = 2^x ) and then applied several transformations to make the graph fit the shape of the wooden curves. I used horizontal stretches and compressions to control how quickly the graph increased, and I translated the functions left, right, up, and down so the curves aligned properly with the structure in the photo. I also restricted some of the domains so the graph would only appear on the parts of the image where the wooden curves existed. These transformations made sense because the exponential curves closely matched the way the wooden design bends upward sharply near the top while remaining lower near the bottom.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>The domain of my function is restricted depending on each curve, but overall it mainly exists between ( x = -5 ) and ( x = 2 ), since that is where the wooden structure appears in the photo. In real life, this represents the horizontal distance across the structure that I measured from my finger. The range of the function is approximately ( y = -4 ) to ( y = 6 ), because the graph extends from the bottom of the structure up to the highest visible curved section. This connects to the real-world meaning because the y-values represent the height of the wooden curves above the floor, while the x-values represent the horizontal distance across the structure.</p>
+          <h3>Written Components</h3>
+          <p>To model the upward sweeping wooden architectural curve from my photo, I used an exponential function based on the parent function y = 2^x: y = 8^(0.8x - 0.9) + 1.77. To align this mathematical graph perfectly with the physical structure, I applied a series of transformations to the parent function. First, the base of 8 acts as an inherent vertical stretch compared to a base of 2, which allows the curve to climb much quicker. Next, the exponent can be factored as 0.8(x - 1.125), which reveals a horizontal stretch by a factor of 1/0.8 (or 1.25) to moderate that steepness, alongside a horizontal shift to the right by 1.125 units. Shifting the graph to the right delays the explosive growth phase of the exponential curve, perfectly matching the physical geometry of the partition where it slowly rounds out before swooping upward. Finally, I added a vertical shift upward by 1.77 units, which establishes a new horizontal asymptote at y = 1.77, lifting the entire curve into place so it sits exactly on top of the wooden feature where it begins just above my hand. When looking at the constraints of my model, the domain is defined as {2 &gt;= x &gt;= 0}, which can be written normally as {0 &lt;= x &lt;= 2}. In the context of my project, this domain represents the continuous horizontal distance of the wooden curve measured in meters, relative to my finger. This indicates that my tracking begins right at the vertical axis where my finger points (x = 0) and captures the structural sweep across a horizontal span of exactly 2 meters to the right. The corresponding range for this exponential model over the given domain is approximately {y ∈ ℝ | 1.91 &lt;= y &lt;= 6.02}. In the real world, the range represents the vertical height of the wooden curve in meters relative to my baseline. The lower bound of 1.91 meters captures the height of the structure right at the starting point above my finger, while the upper bound of 6.02 meters represents the maximum height the wooden panel reaches as the exponential function climbs toward the top right limit of my tracking span.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Logarithmic Function</h2>
+      <h2 class="heading">logarithmic function (log(x))</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/96isit76sf?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/96isit76sf" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the handrail from my photo, I used a piecewise function consisting of two different logarithmic equations to capture the distinct curves of the physical structure. For the first section, which covers the sharp initial curve, I used the equation y = 4log(18x - 0.02). In this part, the parent function has been vertically stretched by a factor of 4 and horizontally compressed by a factor of 1/18, which allows the curve to climb incredibly fast. I also applied a very slight horizontal shift to the right by about 0.0011 units. This combination makes perfect sense for my photo because it models the abrupt, nearly vertical transition where the handrail bends upward from the lower level right next to my hip, starting just a tiny fraction to the right of my reference axis. For the second section, which models the longer incline going up the stairs, my equation is y = 6log(1.06x + 2.4) - 0.2. Here, the function experiences a vertical stretch by a factor of 6, a slight horizontal compression, a significant horizontal shift to the left by about 2.26 units, and a vertical shift downward by 0.2 units. Since a standard logarithmic curve naturally flattens out as x increases, shifting the graph heavily to the left allowed me to use that flatter, more gradual slope to perfectly match the steady, linear incline of the physical staircase railing.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my overall model, the domain is defined as {x ∈ ℝ | 0 < x <= 4}. In the context of my project, this domain represents the continuous horizontal distance of the handrail measured in meters, relative to my pocket. It shows that my mathematical model begins right after the reference point of my pocket (x = 0) and extends across a horizontal span of exactly 4 meters along the stairs. The corresponding range for this piecewise model is approximately {y ∈ ℝ | -5.99 < y <= 4.31}. In the real world, the range represents the vertical height of the handrail in meters relative to my baseline. The lower bound drops down toward -5.99 meters because the first logarithmic equation shoots downward to follow the vertical support post toward the ground, while the upper bound shows that the highest point of the handrail reaches approximately 4.31 meters at the top of the stairs within my designated tracking span.</p>
+          <h3>Written Components</h3>
+          <p>To model the handrail from my photo, I used a piecewise function consisting of two different logarithmic equations to capture the distinct curves of the physical structure. For the first section, which covers the sharp initial curve, I used the equation y = 4log(18x - 0.02). In this part, the parent function has been vertically stretched by a factor of 4 and horizontally compressed by a factor of 1/18, which allows the curve to climb incredibly fast. I also applied a very slight horizontal shift to the right by about 0.0011 units. This combination makes perfect sense for my photo because it models the abrupt, nearly vertical transition where the handrail bends upward from the lower level right next to my hip, starting just a tiny fraction to the right of my reference axis. For the second section, which models the longer incline going up the stairs, my equation is y = 6log(1.06x + 2.4) - 0.2. Here, the function experiences a vertical stretch by a factor of 6, a slight horizontal compression, a significant horizontal shift to the left by about 2.26 units, and a vertical shift downward by 0.2 units. Since a standard logarithmic curve naturally flattens out as x increases, shifting the graph heavily to the left allowed me to use that flatter, more gradual slope to perfectly match the steady, linear incline of the physical staircase railing. The vertical stretch and downward shift then align it precisely so that the curve sits right on top of the handrail in the image. When looking at the constraints of my overall model, the domain is defined as {x ∈ ℝ | 0 &lt; x &lt;= 4}. In the context of my project, this domain represents the continuous horizontal distance of the handrail measured in meters, relative to my pocket. It shows that my mathematical model begins right after the reference point of my pocket (x = 0) and extends across a horizontal span of exactly 4 meters along the stairs. The corresponding range for this piecewise model is approximately {x ∈ ℝ | -5.99 &lt; y &lt;= 4.31}. In the real world, the range represents the vertical height of the handrail in meters relative to my baseline. The lower bound drops down toward -5.99 meters because the first logarithmic equation shoots downward to follow the vertical support post toward the ground, while the upper bound shows that the highest point of the handrail reaches approximately 4.31 meters at the top of the stairs within my designated tracking span.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Sinusoidal (cos)</h2>
+      <h2 class="heading">sinusodial (cos)</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/keaunadtte?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/keaunadtte" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the wavy design from this photo, I used a sinusoidal function based on the cosine parent function: y = 0.2cos(6(x + 0.14)). To perfectly match the physical ripples on the structure, I applied several transformations to the parent graph. First, I applied a vertical compression by a factor of 0.2, which scales down the amplitude so that the peaks and troughs perfectly match the shallow, subtle depth of the physical waves. Next, I incorporated a horizontal compression by a factor of 1/6 (or a B-value of 6), which significantly shortens the period of the wave to replicate how frequently and tightly packed the ripples are in real life. Finally, I applied a horizontal shift to the left by 0.14 units. This shift is essential because it aligns the crest of my mathematical cosine wave precisely with the very first physical ripple starting just to the right of the vertical axis.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my model, the domain is restricted to {x ∈ ℝ | 0 <= x <= 4}. In the context of my photo, this domain represents the continuous horizontal distance of the wavy design in meters, measured relative to my chin. It indicates that my tracking begins exactly at my alignment baseline (x = 0) and captures the pattern across a horizontal span of 4 meters. The corresponding range for this sinusoidal model is {y ∈ ℝ | -0.2 <= y <= 0.2}. In the real world, the range represents the vertical height variation of the wavy pattern in meters relative to the center axis of the design. The lower bound of -0.2 meters represents the lowest points (the troughs) of the wave pattern, while the upper bound of 0.2 meters represents the highest points (the crests), showing that the entire wavy feature has a consistent total thickness or height variation of 0.4 meters throughout the modeled section.</p>
+          <h3>Written Components</h3>
+          <p>To model the wavy design from this photo, I used a sinusoidal function based on the cosine parent function: y = 0.2cos(6(x + 0.14)). To perfectly match the physical ripples on the structure, I applied several transformations to the parent graph. First, I applied a vertical compression by a factor of 0.2, which scales down the amplitude so that the peaks and troughs perfectly match the shallow, subtle depth of the physical waves. Next, I incorporated a horizontal compression by a factor of 1/6 (or a B-value of 6), which significantly shortens the period of the wave to replicate how frequently and tightly packed the ripples are in real life. Finally, I applied a horizontal shift to the left by 0.14 units. This shift is essential because it aligns the crest of my mathematical cosine wave precisely with the very first physical ripple starting just to the right of the vertical axis. When looking at the constraints of my model, the domain is restricted to {x ∈ ℝ | 0 &lt;= x &lt;= 4}. In the context of my photo, this domain represents the continuous horizontal distance of the wavy design in meters, measured relative to my chin. It indicates that my tracking begins exactly at my alignment baseline (x = 0) and captures the pattern across a horizontal span of 4 meters. The corresponding range for this sinusoidal model is {y ∈ ℝ | -0.2 &lt;= y &lt;= 0.2}. In the real world, the range represents the vertical height variation of the wavy pattern in meters relative to the center axis of the design. The lower bound of -0.2 meters represents the lowest points (the troughs) of the wave pattern, while the upper bound of 0.2 meters represents the highest points (the crests), showing that the entire wavy feature has a consistent total thickness or height variation of 0.4 meters throughout the modeled section.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Linear Reciprocal 1/x</h2>
+      <h2 class="heading">linear reciprocal (1/x)</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/tn4ae0kvln?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/tn4ae0kvln" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the curves of the armchairs from my photo, I used a piecewise function consisting of two linear reciprocal equations based on the parent function y = 1/x. For the first section, which models the smooth curve of the left armchair, I used the equation y = 0.05/x + 0.1. In this part, the parent function has experienced a vertical compression by a factor of 0.05, which drastically flattens out the sharp turn of the standard hyperbola so that it smoothly follows the gentle slope of the chair's arm. I also added a vertical shift upward by 0.1 units. This makes perfect sense in the context of my photo because it aligns the horizontal asymptote of the curve exactly with the physical top surface of the armchair seating. For the second section, which models the inner curve of the right armchair, my equation is y = 0.05/(3x + 1) - 0. This equation can be rewritten as y = 0.05/(3(x + 1/3)) to easily see the transformations. Here, the function experiences the same vertical compression by a factor of 0.05 to match the first curve's thickness, along with a horizontal compression by a factor of 1/3 and a horizontal shift to the left by 1/3 (or approximately 0.33) units.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my overall model, the domain is defined by the piecewise intervals {-4.3 <= x <= 0} and {-0.33333 <= x <= 3.3}. In the context of my project, this domain represents the continuous horizontal distance measured in meters relative to the couch seat edge. It shows that my mathematical tracking begins on the left armchair at -4.3 meters, breaks briefly at the gap near the vertical axis, and extends across to the right side up to 3.3 meters. The corresponding range for this piecewise model is approximately {y ∈ ℝ | -3.95 <= y <= 0.65} excluding the values inside the physical gap between the curves. In the real world, the range represents the vertical height from the armchair in meters. The lower bound drops down toward -3.95 meters as the right-hand function plunges downward to trace the vertical space between the furniture pieces, while the upper bound of 0.65 meters captures the highest surface level of the cushions within my designated tracking area.</p>
+          <h3>Written Components</h3>
+          <p>To model the curves of the armchairs from my photo, I used a piecewise function consisting of two linear reciprocal equations based on the parent function y = 1/x. For the first section, which models the smooth curve of the left armchair, I used the equation y = 0.05/x + 0.1. In this part, the parent function has experienced a vertical compression by a factor of 0.05, which drastically flattens out the sharp turn of the standard hyperbola so that it smoothly follows the gentle slope of the chair's arm. I also added a vertical shift upward by 0.1 units. This makes perfect sense in the context of my photo because it aligns the horizontal asymptote of the curve exactly with the physical top surface of the armchair seating. For the second section, which models the inner curve of the right armchair, my equation is y = 0.05/(3x + 1) - 0. This equation can be rewritten as y = 0.05/(3(x + 1/3)) to easily see the transformations. Here, the function experiences the same vertical compression by a factor of 0.05 to match the first curve's thickness, along with a horizontal compression by a factor of 1/3 and a horizontal shift to the left by 1/3 (or approximately 0.33) units. Shifting the graph slightly to the left moves the vertical asymptote to x = -0.33, which perfectly positions the steep drop-off of the reciprocal function to trace the narrow vertical gap between the two chairs before it curves out to track the right seat cushion. When looking at the constraints of my overall model, the domain is defined by the piecewise intervals {-4.3 &lt;= x &lt;= 0} and {-0.33333 &lt;= x &lt;= 3.3}. In the context of my project, this domain represents the continuous horizontal distance measured in meters relative to the couch seat edge. It shows that my mathematical tracking begins on the left armchair at -4.3 meters, breaks briefly at the gap near the vertical axis, and extends across to the right side up to 3.3 meters. The corresponding range for this piecewise model is approximately {y ∈ ℝ | -3.95 &lt;= y &lt;= 0.65} excluding the values inside the physical gap between the curves. In the real world, the range represents the vertical height from the armchair in meters. The lower bound drops down toward -3.95 meters as the right-hand function plunges downward to trace the vertical space between the furniture pieces, while the upper bound of 0.65 meters captures the highest surface level of the cushions within my designated tracking area.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Function of Choice: Absolute Value</h2>
+      <h2 class="heading">function of choice: absolute value</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/bzrbec2fi8?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/bzrbec2fi8" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the V-shaped architectural beams of the ceiling structure from my photo, I used an absolute value function based on the parent function y = |x|: y = |1.48x + 0.1|. To align the mathematical graph with the physical structure, I applied a couple of key transformations. First, the equation can be factored as y = |1.48(x + 0.068)|, which reveals a horizontal compression by a factor of 1/1.48 (or a horizontal stretch of the slopes to roughly 1.48). This makes perfect sense in the context of my photo because it steepens the V-shape to match the exact angular incline of the real-world architectural supports. Second, I applied a slight horizontal shift to the left by approximately 0.068 units. This minor adjustment ensures that the sharp vertex of the absolute value function sits precisely at the lowest point of the central ceiling joint, positioned just slightly to the left of the vertical axis.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my model, the domain is defined as {-2 <= x <= 2}. In the context of my project, this domain represents the continuous horizontal distance of the ceiling beams measured in meters, relative to my head. It indicates that my mathematical tracking spans symmetrically across a total horizontal distance of 4 meters, beginning 2 meters to the left of my alignment baseline and ending 2 meters to the right. The corresponding range for this model over the given domain is {y ∈ ℝ | 0 <= y <= 3.06}. In the real world, the range represents the vertical height of the ceiling structure in meters relative to the vertex baseline. The lower bound of 0 meters represents the absolute lowest point of the architectural V-structure where the two beams meet, while the upper bound of 3.06 meters represents the highest point the structural beams reach at the outer limits of my designated tracking span.</p>
+          <h3>Written Components</h3>
+          <p>To model the V-shaped architectural beams of the ceiling structure from my photo, I used an absolute value function based on the parent function y = |x|: y = |1.48x + 0.1|. To align the mathematical graph with the physical structure, I applied a couple of key transformations. First, the equation can be factored as y = |1.48(x + 0.068)|, which reveals a horizontal compression by a factor of 1/1.48 (or a horizontal stretch of the slopes to roughly 1.48). This makes perfect sense in the context of my photo because it steepens the V-shape to match the exact angular incline of the real-world architectural supports. Second, I applied a slight horizontal shift to the left by approximately 0.068 units. This minor adjustment ensures that the sharp vertex of the absolute value function sits precisely at the lowest point of the central ceiling joint, positioned just slightly to the left of the vertical axis. When looking at the constraints of my model, the domain is defined as {-2 &lt;= x &lt;= 2}. In the context of my project, this domain represents the continuous horizontal distance of the ceiling beams measured in meters, relative to my head. It indicates that my mathematical tracking spans symmetrically across a total horizontal distance of 4 meters, beginning 2 meters to the left of my alignment baseline and ending 2 meters to the right. The corresponding range for this model over the given domain is {y ∈ ℝ | 0 &lt;= y &lt;= 3.06}. In the real world, the range represents the vertical height of the ceiling structure in meters relative to the vertex baseline. The lower bound of 0 meters represents the absolute lowest point of the architectural V-structure where the two beams meet, while the upper bound of 3.06 meters represents the highest point the structural beams reach at the outer limits of my designated tracking span.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Trigonometric Function (tan x)</h2>
+      <h2 class="heading">trigonometric function : tan(x)</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/ca62qehzyj?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/ca62qehzyj" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the flowing, upward curve of the fabric design from my photo, I used a trigonometric function based on the tangent parent function: y = 0.2tan(1.4x + 3.1). To align the mathematical curve with the physical shape of the material, I applied several precise transformations. First, I incorporated a vertical compression by a factor of 0.2, which significantly flattens out the steepness of the standard tangent curve, allowing it to gently glide along the lower, flatter section of the fabric profile before it climbs. Next, the equation can be factored as y = 0.2tan(1.4(x + 2.214)), which reveals a horizontal compression by a factor of 1/1.4. This changes the period of the function to match the horizontal span of the fabric's curve. Finally, I applied a horizontal shift to the left by approximately 2.214 units. This shift moves the central inflection point of the tangent curve over to the left, positioning the function perfectly so that its natural upward-sweeping tail traces the exact contour of the flag design as it swoops upward on the right.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my model, the domain is restricted to {1.153 <= x <= 3.3958}. In the context of my project, this domain represents the continuous horizontal distance of the tracked fabric design in meters, measured relative to my reference baseline. It shows that my mathematical tracking focuses purely on a specific horizontal window of about 2.24 meters, capturing the exact region where the fabric transitions from a level slope into a sharp upward wave. The corresponding range for this tangent model over the given domain is approximately {y ∈ ℝ | -1.04 <= y <= 3.86}. In the real world, the range represents the vertical height variation of the fabric design in meters.</p>
+          <h3>Written Components</h3>
+          <p>To model the flowing, upward curve of the fabric design from my photo, I used a trigonometric function based on the tangent parent function: y = 0.2tan(1.4x + 3.1). To align the mathematical curve with the physical shape of the material, I applied several precise transformations. First, I incorporated a vertical compression by a factor of 0.2, which significantly flattens out the steepness of the standard tangent curve, allowing it to gently glide along the lower, flatter section of the fabric profile before it climbs. Next, the equation can be factored as y = 0.2tan(1.4(x + 2.214)), which reveals a horizontal compression by a factor of 1/1.4. This changes the period of the function to match the horizontal span of the fabric's curve. Finally, I applied a horizontal shift to the left by approximately 2.214 units. This shift moves the central inflection point of the tangent curve over to the left, positioning the function perfectly so that its natural upward-sweeping tail traces the exact contour of the flag design as it swoops upward on the right. When looking at the constraints of my model, the domain is restricted to {1.153 &lt;= x &lt;= 3.3958}. In the context of my project, this domain represents the continuous horizontal distance of the tracked fabric design in meters, measured relative to my reference baseline. It shows that my mathematical tracking focuses purely on a specific horizontal window of about 2.24 meters, capturing the exact region where the fabric transitions from a level slope into a sharp upward wave. The corresponding range for this tangent model over the given domain is approximately {y ∈ ℝ | -1.04 &lt;= y &lt;= 3.86}. In the real world, the range represents the vertical height variation of the fabric design in meters. The lower bound of -1.04 meters marks the starting point of the fabric sweep on the left side of my tracking boundary, while the upper bound of 3.86 meters represents the highest point the flowing fabric reaches as the tangent function shoots upward near its vertical asymptote on the right side of the photo.</p>
         </div>
       </div>
     </div>
 
     <div class="graph-card">
       <div class="bow-decoration">🎀</div>
-      <h2 class="heading">Polynomial >2</h2>
+      <h2 class="heading">polynomial &gt;2</h2>
       <div class="graph-area">
         <iframe src="https://www.desmos.com/calculator/opb9qm3nak?embed" frameborder="0"></iframe>
       </div>
       <div class="written-components">
         <a href="https://www.desmos.com/calculator/opb9qm3nak" target="_blank" class="desmos-btn">View Full Interactive Graph ↗</a>
         <div class="component-section">
-          <h3>1. Transformations Paragraph</h3>
-          <p>To model the red swooping curve of the logistics company logo from my photo, I used a higher-degree polynomial function based on a cubic parent function: y = -0.1(x + 3)³ + 1.98. To align this mathematical model perfectly with the graphic on the truck, I applied a series of transformations to the parent graph. First, I included a horizontal shift to the left by 3 units, which moves the inflection point of the cubic curve away from the vertical axis. Next, I applied a vertical reflection across the x-axis, changing the direction of the curve so that it falls from left to right instead of rising. I combined this reflection with a vertical compression by a factor of 0.1, which dramatically flattens the curve out so it doesn't drop too steeply, allowing it to accurately trace the elongated, sweeping tail of the logo. Finally, I added a vertical shift upward by 1.98 units, which raises the entire function into place so that it sits right over the painted line on the side of the vehicle.</p>
-        </div>
-        <div class="component-section">
-          <h3>2. Domain and Range Paragraph</h3>
-          <p>When looking at the constraints of my model, the domain is defined as {-5.52 <= x <= -0.7}. In the context of my project, this domain represents the continuous horizontal distance of the logistics logo curve measured in meters, relative to my face. It indicates that my mathematical tracking focuses on a localized window of about 4.82 meters on the negative side of the vertical axis, matching the exact physical placement of the truck's logo container relative to where I am standing. The corresponding range for this cubic model over the specified domain is approximately {y ∈ ℝ | 0.99 <= y <= 3.98}. In the real world, the range represents the vertical height of the logo design in meters relative to my baseline.</p>
+          <h3>Written Components</h3>
+          <p>To model the red swooping curve of the logistics company logo from my photo, I used a higher-degree polynomial function based on a cubic parent function: y = -0.1(x + 3)^3 + 1.98. To align this mathematical model perfectly with the graphic on the truck, I applied a series of transformations to the parent graph. First, I included a horizontal shift to the left by 3 units, which moves the inflection point of the cubic curve away from the vertical axis. Next, I applied a vertical reflection across the x-axis, changing the direction of the curve so that it falls from left to right instead of rising. I combined this reflection with a vertical compression by a factor of 0.1, which dramatically flattens the curve out so it doesn't drop too steeply, allowing it to accurately trace the elongated, sweeping tail of the logo. Finally, I added a vertical shift upward by 1.98 units, which raises the entire function into place so that it sits right over the painted line on the side of the vehicle. When looking at the constraints of my model, the domain is defined as {-5.52 &lt;= x &lt;= -0.7}. In the context of my project, this domain represents the continuous horizontal distance of the logistics logo curve measured in meters, relative to my face. It indicates that my mathematical tracking focuses on a localized window of about 4.82 meters on the negative side of the vertical axis, matching the exact physical placement of the truck's logo container relative to where I am standing. The corresponding range for this cubic model over the specified domain is approximately {y ∈ ℝ | 0.99 &lt;= y &lt;= 3.98}. In the real world, the range represents the vertical height of the logo design in meters relative to my baseline. The lower bound of 0.99 meters represents the lowest point of the red swoop on the right side where my tracking domain ends, while the upper bound of 3.98 meters captures the highest point of the graphic on the left where the curve reaches toward the top edge of the truck's cargo container.</p>
         </div>
       </div>
     </div>
